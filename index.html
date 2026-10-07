@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HyperXcite Studio — Mobile Games Built for the Rush</title>
+<meta name="description" content="HyperXcite Studio creates fast-paced, adrenaline-fueled mobile games. Play Slice Escape now on Google Play.">
+
+<meta property="og:title" content="HyperXcite Studio">
+<meta property="og:description" content="Fast. Fierce. Fun. Mobile games engineered for pure adrenaline.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='%230a0a12'/%3E%3Cpath d='M30 70 L70 30 M45 30 L30 30 L30 45 M70 55 L70 70 L55 70' stroke='url(%23g)' stroke-width='9' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="22" fill="url(#lg)"/>
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#8b5cf6"/>
+            <stop offset="1" stop-color="#22d3ee"/>
+          </linearGradient>
+        </defs>
+        <path d="M30 70 L70 30 M45 30 L30 30 L30 45 M70 55 L70 70 L55 70" stroke="#0a0a12" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text">Hyper<span class="accent">Xcite</span></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://play.google.com/store/apps/developer?id=HyperXcite+Game+Studio&hl=en" class="nav-cta" target="_blank" rel="noopener">Play Now</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--a" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--b" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow">⚡ Now live on Google Play</p>
+      <h1 class="hero-title">
+        GAMES BUILT<br>
+        FOR THE <span class="accent glitch" data-text="RUSH">RUSH</span>
+      </h1>
+      <p class="hero-sub">
+        HyperXcite Studio crafts fast, fierce, bite-sized mobile games designed to spike
+        your pulse. Our first release, <strong>Slice Escape</strong>, is out now.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#games">Explore Our Games</a>
+        <a class="store-badge" href="https://play.google.com/store/apps/developer?id=HyperXcite+Game+Studio&hl=en" target="_blank" rel="noopener" aria-label="Get Slice Escape on Google Play">
+          <svg viewBox="0 0 512 512" class="store-badge-icon" aria-hidden="true">
+            <path fill="#00D2FF" d="M325.3 234.3L104.6 13.6c-7.7 3.9-12.6 11.9-12.6 20.9v443c0 9 4.9 17 12.6 20.9l220.7-220.7z"/>
+            <path fill="#00F076" d="M104.6 13.6c1.9-1 4-1.6 6.2-1.6 5 0 9.8 1.9 13.4 5.4l186.9 186.9-73 73L104.6 13.6z"/>
+            <path fill="#FF3A44" d="M325.3 277.7l-87.2 87.2L124.2 498.6c-3.6 3.5-8.4 5.4-13.4 5.4-2.2 0-4.3-.6-6.2-1.6l164.6-164.7 56.1-60z"/>
+            <path fill="#FFCF00" d="M398.9 221.7l-73.6 42.6-73-73 73-73 73.6 42.6c10.6 6.1 17.1 17.4 17.1 29.6s-6.5 23.6-17.1 30.2z"/>
+          </svg>
+          <span class="store-badge-text"><small>GET IT ON</small>Google Play</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>1</strong><span>Game Shipped</span></div>
+        <div><strong>∞</strong><span>Rush Delivered</span></div>
+        <div><strong>2026</strong><span>More Coming</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="games">
+    <div class="container">
+      <p class="section-tag">// Our Catalog</p>
+      <h2 class="section-title">Play Our Games</h2>
+
+      <div class="game-card">
+        <div class="game-art">
+          <img
+            src="assets/images/slice-escape-icon.png"
+            alt="Slice Escape app icon"
+            class="game-icon"
+            width="200" height="200" loading="lazy">
+        </div>
+
+        <div class="game-info">
+          <div class="game-heading">
+            <h3>Slice Escape</h3>
+            <span class="badge badge-live">Live Now</span>
+          </div>
+          <p class="game-desc">
+            Think fast, slice faster. Carve your way through obstacles, dodge deadly traps,
+            and race the clock to escape every level. One wrong move and it's game over —
+            do you have the reflexes to make it out?
+          </p>
+
+          <ul class="game-tags">
+            <li>Arcade</li>
+            <li>Puzzle</li>
+            <li>Fast-Paced</li>
+          </ul>
+
+          <div class="game-actions">
+            <a class="store-badge store-badge--sm" href="https://play.google.com/store/apps/details?id=com.hyperxcite.sliceescape&hl=en" target="_blank" rel="noopener" aria-label="Get Slice Escape on Google Play">
+              <svg viewBox="0 0 512 512" class="store-badge-icon" aria-hidden="true">
+                <path fill="#00D2FF" d="M325.3 234.3L104.6 13.6c-7.7 3.9-12.6 11.9-12.6 20.9v443c0 9 4.9 17 12.6 20.9l220.7-220.7z"/>
+                <path fill="#00F076" d="M104.6 13.6c1.9-1 4-1.6 6.2-1.6 5 0 9.8 1.9 13.4 5.4l186.9 186.9-73 73L104.6 13.6z"/>
+                <path fill="#FF3A44" d="M325.3 277.7l-87.2 87.2L124.2 498.6c-3.6 3.5-8.4 5.4-13.4 5.4-2.2 0-4.3-.6-6.2-1.6l164.6-164.7 56.1-60z"/>
+                <path fill="#FFCF00" d="M398.9 221.7l-73.6 42.6-73-73 73-73 73.6 42.6c10.6 6.1 17.1 17.4 17.1 29.6s-6.5 23.6-17.1 30.2z"/>
+              </svg>
+              <span class="store-badge-text"><small>GET IT ON</small>Google Play</span>
+            </a>
+
+            <span class="store-badge store-badge--sm store-badge--disabled" aria-disabled="true">
+              <svg viewBox="0 0 384 512" class="store-badge-icon store-badge-icon--apple" aria-hidden="true">
+                <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.2-52.3.8-107.9 41.5-107.9 124.5 0 25.4 4.8 51.7 14.3 78.8 12.8 36.2 59 124.9 107.3 123.4 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.8-.7 90.5-81.4 102.6-117.6-65.3-30.8-68.9-90.4-68.9-81.2zM255.6 65.4c20.9-25.3 35.1-60 31.1-94.6-30.4 1.2-67.1 20.4-88.8 46.4-19.5 23-36.6 59.4-32 93.6 31.6 2.4 64.1-17.2 89.7-45.4z"/>
+              </svg>
+              <span class="store-badge-text"><small>COMING SOON</small>App Store</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-games">
+        <div class="more-games-icon" aria-hidden="true">+</div>
+        <p>More games are in development. Stay tuned for what's next.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-copy">
+        <p class="section-tag">// Who We Are</p>
+        <h2 class="section-title">About HyperXcite</h2>
+        <p>
+          HyperXcite Studio is an independent mobile games studio obsessed with one thing:
+          the rush. We build tight, fast, replayable games that respect your time and reward
+          your reflexes — no bloat, no filler, just pure adrenaline in your pocket.
+        </p>
+        <p>
+          Our debut title, <strong>Slice Escape</strong>, is live now on Google Play, with an
+          iOS release and more games on the way.
+        </p>
+      </div>
+
+      <div class="about-features">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast &amp; Fierce</h3>
+          <p>Gameplay engineered for quick sessions and instant replay value.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Built With Passion</h3>
+          <p>Every level is crafted by a small team that genuinely loves games.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Always Shipping</h3>
+          <p>More titles are already in motion — this is just the beginning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <p class="section-tag">// Get In Touch</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">Questions, feedback, or press inquiries — we'd love to hear from you.</p>
+      <a class="btn btn-primary" href="mailto:contact@hyperxcite.com">contact@hyperxcite.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text small">Hyper<span class="accent">Xcite</span></span>
+      <p>Mobile games engineered for pure adrenaline.</p>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://play.google.com/store/apps/details?id=com.hyperxcite.sliceescape&hl=en" target="_blank" rel="noopener">Slice Escape on Google Play</a>
+    </div>
+    <p class="footer-copy">© 2026 HyperXcite Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
