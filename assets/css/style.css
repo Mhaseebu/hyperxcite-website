@@ -309,6 +309,12 @@ section { position: relative; z-index: 1; padding: 100px 0; }
   border: 1px solid rgba(34,211,238,0.4);
 }
 
+.badge-soon {
+  background: rgba(168,85,247,0.15);
+  color: var(--purple);
+  border: 1px solid rgba(168,85,247,0.4);
+}
+
 .game-desc { color: var(--text-muted); margin-bottom: 18px; max-width: 560px; }
 
 .game-tags { display: flex; gap: 10px; list-style: none; margin-bottom: 24px; flex-wrap: wrap; }
